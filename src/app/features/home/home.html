@@ -1,0 +1,19 @@
+<div [ngStyle]="{'background-color': bgColor,'color':text}" class=" h-screen">
+    <div   class="container flex justify-between w-[95%] md:w-[80%] mx-auto items-center ">
+        <div class="w-[80%] mx-auto mt-20 ">
+            <h1 class="text-4xl font-extrabold uppercase">iphone 13 pro max</h1>
+            <p class=" my-2 font-bold md:w-[40%]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tenetur saepe cumque nostrum et earum obcaecati suscipit 
+                reprehenderit eius similique consequatur!</p>
+            <button class="px-4 my-2 py-2 bg-purple-600 hover:bg-purple-800 rounded-3xl cursor-pointer text-white duration-200 transition">Shop Now</button>
+        </div>
+        <div class="sm:w-[50%] md:w-[17%]">
+            <img [src]="selectImage" alt="" class="img w-full">
+        </div>
+        <div class="icons w-[13%] md:w-[9%] flex">
+            <img  *ngFor="let p of phoneList" [src]="p.img" (click)="changeImage(p)" alt="" class="w-full  cursor-pointer w-full hover:transition duration-400">
+         
+        </div>
+    </div>
+
+</div>
