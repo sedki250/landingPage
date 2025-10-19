@@ -9,15 +9,15 @@ import { isPlatformBrowser, NgForOf, NgStyle } from '@angular/common';
   styleUrl: './home.scss'
 })
 export class Home {
-selectImage:string='abdelrahman gamal/0.png'
+selectImage:string='0.png'
 bgColor:string='#000000'
 text:string='#fff'
 phoneList=[
-  {img:'abdelrahman gamal/0.png',color: '#B8860B',textColor:'#fff'},
-  {img:'abdelrahman gamal/1.png',color: '#93c5fd',textColor:'#000'},
-  {img:'abdelrahman gamal/2.png',color: '#505050',textColor:'#fff'},
-  {img:'abdelrahman gamal/3.png',color: '#EED9C4',textColor:'#000'},
-  {img:'abdelrahman gamal/4.png',color: '#DC143C',textColor:'#fff'}
+  {img:'0.png',color: '#B8860B',textColor:'#fff'},
+  {img:'1.png',color: '#93c5fd',textColor:'#000'},
+  {img:'2.png',color: '#505050',textColor:'#fff'},
+  {img:'3.png',color: '#EED9C4',textColor:'#000'},
+  {img:'4.png',color: '#DC143C',textColor:'#fff'}
 ]
 changeImage(p:any){
 this.selectImage=p.img
